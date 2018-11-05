@@ -6,9 +6,10 @@ Node Express Posgresql
 을 따라하면서 막히는 부분 수정
 
 * PostgreSQL 설치 및 실행
+  - postgresql-10.5
 * createUser result 오타 및 returning ID 부분 처리
-
-
+  - results 가 result 로 오타
+  - insert 후 ID 가 리턴되지 않아 returning ID 하도록 코드 수정
 
 ## 1. PostgreSQL 인스톨 및 실행
 
