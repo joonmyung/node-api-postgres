@@ -1,12 +1,23 @@
 # node-api-postgres
 Node Express Posgresql
 
-## PostgreSQL 인스톨 
+[Setting up a RESTful API with Node.js and PostgreSQL](https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8?fbclid=IwAR1fbBLEsK3jgIgQ26vlUBmBJrk81C6C1C5_zij2v-JpEIJoScoL5biP5kU)
+
+을 따라하면서 막히는 부분 수정
+
+* PostgreSQL 설치 및 실행
+* createUser result 오타 및 returning ID 부분 처리
+
+
+
+## 1. PostgreSQL 인스톨 및 실행
 
 <pre>
 
 brew install postgresql
+
 brew services stop postgresql
+
 pg_ctl -D /usr/local/var/postgres start
   <code>
     waiting for server to start....2018-11-05 15:02:53.444 KST [41568] LOG:  listening on IPv6 address "::1", port 5432
@@ -22,7 +33,7 @@ psql postgres
 
 </pre>
 
-## createUser 수정
+## 2. createUser 수정
 
 <pre>
 <code>
